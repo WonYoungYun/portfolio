@@ -1,0 +1,33 @@
+맨위 네비게이션 스크롤바
+Home(맨위로)
+About me 
+Project
+Contact me
+
+스크롤을 내리면 화면 상단에 고정
+
+web-study2의 2.css 2-5web을 참조하여 만들기
+
+
+맨 위 화면은 윤원영의 포트폴리오! 이런느낌으로 
+페이지 슬라이딩 여러개 지나가면서
+저는 누구입니다 (ABOUT ME) 자세히보기 버튼도 넣고
+이런것을 만들어 보았습니다.(Project)
+저와 연락하시려면? (Contact me)
+https://www.w3schools.com/howto/howto_js_slideshow.asp 참조
+
+About me
+내 자소서 넣기
+
+Project
+내가 한 프로ㅓ젝트 movie app, text-rpg, todo_list, 하이퍼링크로 연결 깃허브
+
+Contact me
+전화번호, 이메일, 깃허브
+
+화면 내리면 맨위로 올라가는 버튼도 구현
+
+모바일로도 확인 할 수 있도록 구현
+
+
+
