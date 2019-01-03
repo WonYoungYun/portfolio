@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../css/Navigation.css";
 export default class Navigation extends Component {
   state = {
-    classList: ""
+    classList: "nonScroll"
   };
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
@@ -18,7 +18,7 @@ export default class Navigation extends Component {
       });
     } else {
       this.setState({
-        classList: ""
+        classList: "nonScroll"
       });
     }
   };

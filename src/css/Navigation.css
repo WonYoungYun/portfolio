@@ -27,7 +27,9 @@
 #nav:hover a {
   color: #333;
 }
-
+.nonScroll {
+  position: absolute;
+}
 .scroll {
   position: fixed;
   background-color: #fff;
