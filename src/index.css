@@ -2,7 +2,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 3000px;
 }
 body,
 p,
@@ -60,9 +60,4 @@ address {
 }
 a {
   text-decoration: none;
-}
-a:hover,
-a:active,
-a:focus {
-  text-decoration: underline;
 }
