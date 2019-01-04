@@ -5,30 +5,86 @@ import projectImg from "../img/project.jpg";
 import contactImg from "../img/contact.jpg";
 
 export default class Slider extends Component {
+  state = {
+    slideData: [
+      {
+        name: "#aboutMe",
+        imgSrc: aboutImg,
+        txt: "나를 소개합니다."
+      },
+      {
+        name: "#project",
+        imgSrc: projectImg,
+        txt: "나의 프로젝트"
+      },
+      {
+        name: "#contactMe",
+        imgSrc: contactImg,
+        txt: "나와의 연결"
+      }
+    ],
+    number: 0
+  };
+  componentDidMount() {
+    setInterval(() => {
+      if (this.state.number < 2) {
+        this.setState({
+          number: this.state.number + 1
+        });
+      } else {
+        this.setState({
+          number: 0
+        });
+      }
+    }, 5000);
+  }
+  prevPage = () => {
+    if (this.state.number > 0) {
+      this.setState({
+        number: this.state.number - 1
+      });
+    } else {
+      this.setState({
+        number: this.state.number
+      });
+    }
+  };
+  nextPage = () => {
+    if (this.state.number < 3) {
+      this.setState({
+        number: this.state.number + 1
+      });
+    } else {
+      this.setState({
+        number: this.state.number
+      });
+    }
+  };
   render() {
     return (
       <div id="slider">
-        <div className="slider">
-          <img src={aboutImg} alt="about me" />
-          <div className="slider_text">
-            <a href="#aboutMe">저는 이런 사람입니다.</a>
-          </div>
+        <div className="sliderHeader">
+          <h1 className="sliderTitle">윤원영의 포트폴리오!</h1>
         </div>
-        <div className="slider">
-          <img src={projectImg} alt="about me" />
-          <div className="slider_text">
-            <a href="#aboutMe">나의 프로젝트</a>
-          </div>
-        </div>
-        <div className="slider">
-          <img src={contactImg} alt="about me" />
-          <div className="slider_text">
-            <a href="#aboutMe">Contact me</a>
-          </div>
-        </div>
-        <button class="prev">이전</button>
-        <button class="next">다음</button>
+        <SlideInfo
+          name={this.state.slideData[this.state.number].name}
+          src={this.state.slideData[this.state.number].imgSrc}
+          txt={this.state.slideData[this.state.number].txt}
+        />
+        <button className="prev" onClick={this.prevPage} />
+        <button className="next" onClick={this.nextPage} />
       </div>
     );
   }
 }
+
+const SlideInfo = ({ name, src, txt, style }) => {
+  return (
+    <div className="sliderPage" style={style}>
+      <img src={src} alt={name} />
+      <div className="sliderText">
+        <a href={name}>{txt}</a>
+      </div>
+    </div>
+  );
+};

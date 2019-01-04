@@ -1,9 +1,11 @@
 #nav {
   width: 100%;
-  height: 60px;
+  height: 70px;
+  z-index: 9999;
 }
 #nav ul {
   display: flex;
+  min-width: 600px;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -12,14 +14,19 @@
 #nav li:hover {
   border-bottom: 2px solid #333;
 }
-#nav ul li a {
-  font-size: 2em;
+
+#nav a {
+  display: inline-block;
+  font-size: 1.8em;
   color: #fff;
   line-height: 2;
-  padding: 0 20px;
+  margin: 10px 0;
+  padding: 0 30px;
   font-weight: bold;
 }
-
+#nav a:focus {
+  outline: none;
+}
 #nav:hover {
   background-color: #fff;
 }
@@ -34,6 +41,6 @@
   position: fixed;
   background-color: #fff;
 }
-.scroll ul li a {
+.scroll a {
   color: #333 !important;
 }
