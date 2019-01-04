@@ -50,7 +50,7 @@ export default class Slider extends Component {
     }
   };
   nextPage = () => {
-    if (this.state.number < 3) {
+    if (this.state.number < 2) {
       this.setState({
         number: this.state.number + 1
       });
@@ -78,9 +78,9 @@ export default class Slider extends Component {
   }
 }
 
-const SlideInfo = ({ name, src, txt, style }) => {
+const SlideInfo = ({ name, src, txt }) => {
   return (
-    <div className="sliderPage" style={style}>
+    <div className="sliderPage">
       <img src={src} alt={name} />
       <div className="sliderText">
         <a href={name}>{txt}</a>

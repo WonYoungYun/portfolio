@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import "../css/Navigation.css";
 export default class Navigation extends Component {
   state = {
+    navData: [
+      {
+        href: "#slider",
+        name: "Home"
+      },
+      {
+        href: "#aboutMe",
+        name: "About Me"
+      },
+      {
+        href: "#project",
+        name: "Project"
+      },
+      {
+        href: "#contactMe",
+        name: "Contact Me"
+      }
+    ],
     classList: "nonScroll"
   };
   componentDidMount = () => {
@@ -23,23 +41,27 @@ export default class Navigation extends Component {
     }
   };
   render() {
+    const { navData } = this.state;
+
     return (
       <div id="nav" className={this.state.classList}>
         <ul>
-          <li>
-            <a href="#slider">Home</a>
-          </li>
-          <li>
-            <a href="#aboutMe">About Me</a>
-          </li>
-          <li>
-            <a href="#project">Project</a>
-          </li>
-          <li>
-            <a href="#contactMe">Contact Me</a>
-          </li>
+          <NavList navData={navData} />
         </ul>
       </div>
     );
   }
 }
+
+const NavList = ({ navData }) => {
+  return navData.map(info => (
+    <NavInfo href={info.href} name={info.name} key={info.name} />
+  ));
+};
+const NavInfo = ({ href, name }) => {
+  return (
+    <li>
+      <a href={href}>{name}</a>
+    </li>
+  );
+};

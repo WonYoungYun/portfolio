@@ -7,14 +7,17 @@ import Slider from "./components/Slider";
 import "./App.css";
 
 class App extends Component {
+  showSlide = n => {};
   render() {
     return (
       <div className="App">
         <Navigation />
         <Slider />
-        <AboutMe />
-        <Project />
-        <ContactMe />
+        <div id="wrap">
+          <AboutMe />
+          <Project />
+          <ContactMe />
+        </div>
       </div>
     );
   }
