@@ -8,16 +8,16 @@ export default class Navigation extends Component {
         name: "Home"
       },
       {
-        href: "#aboutMe",
-        name: "About Me"
+        href: "#about",
+        name: "About"
       },
       {
         href: "#project",
         name: "Project"
       },
       {
-        href: "#contactMe",
-        name: "Contact Me"
+        href: "#contact",
+        name: "Contact"
       }
     ],
     classList: "nonScroll"

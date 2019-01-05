@@ -8,7 +8,7 @@ export default class Slider extends Component {
   state = {
     slideData: [
       {
-        name: "#aboutMe",
+        name: "#about",
         imgSrc: aboutImg,
         txt: "나를 소개합니다."
       },
@@ -18,7 +18,7 @@ export default class Slider extends Component {
         txt: "나의 프로젝트"
       },
       {
-        name: "#contactMe",
+        name: "#contact",
         imgSrc: contactImg,
         txt: "나와의 연결"
       }

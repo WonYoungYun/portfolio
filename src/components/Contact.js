@@ -2,6 +2,6 @@ import React, { Component } from "react";
 
 export default class Contact extends Component {
   render() {
-    return <div id="contactMe">Contact me</div>;
+    return <div id="contact">Contact</div>;
   }
 }
