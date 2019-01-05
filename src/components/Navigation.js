@@ -20,7 +20,9 @@ export default class Navigation extends Component {
         name: "Contact"
       }
     ],
-    classList: "nonScroll"
+    classList: "nonScroll",
+    ulClass: "",
+    tabClass: "fas fa-bars"
   };
   componentDidMount = () => {
     window.addEventListener("scroll", this.handleScroll);
@@ -40,14 +42,32 @@ export default class Navigation extends Component {
       });
     }
   };
+  showList = () => {
+    if (this.state.ulClass) {
+      this.setState({
+        ulClass: "",
+        tabClass: "fas fa-bars"
+      });
+    } else {
+      this.setState({
+        ulClass: "show",
+        tabClass: "fas fa-times"
+      });
+    }
+  };
   render() {
     const { navData } = this.state;
 
     return (
       <div id="nav" className={this.state.classList}>
-        <ul>
-          <NavList navData={navData} />
-        </ul>
+        <div>
+          <span className="tab" onClick={this.showList}>
+            <i className={this.state.tabClass} />
+          </span>
+          <ul className={this.state.ulClass}>
+            <NavList navData={navData} />
+          </ul>
+        </div>
       </div>
     );
   }

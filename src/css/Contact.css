@@ -1,0 +1,24 @@
+#contact {
+  padding-top: 70px;
+  height: 350px;
+}
+#contact .title {
+  font-size: 4em;
+  text-decoration: underline;
+  text-decoration-color: #0ff;
+}
+#contact .content {
+  font-size: 1.5em;
+  margin-top: 30px;
+  color: #333;
+  font-weight: bold;
+}
+#contact .content .email {
+  margin-bottom: 10px;
+}
+#contact .content a {
+  color: #333;
+}
+#contact .content a:hover {
+  text-decoration: underline;
+}

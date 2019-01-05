@@ -4,8 +4,8 @@ import "../css/About.css";
 const About = () => {
   return (
     <div id="about">
-      <h2 className="title">About Me</h2>
-      <h3 className="subTitle">항상 배우려는 개발자</h3>
+      <h2 className="title">About</h2>
+      <h3 className="subTitle">자기자기소개</h3>
       <p className="content">
         안녕하세요 저는 이러이러한 사람입니다. 왜냐면 어쩌구저쩌구 저쩌구 저쩌구
         하하앟만ㅇ하낳ㅁ나하ㅏ만ㅇ람ㄴㅇ라ㅁㄴㅇㄹ 안녕하세요 저는 이러이러한

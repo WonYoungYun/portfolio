@@ -1,0 +1,109 @@
+#project {
+  padding-top: 60px;
+  border-bottom: 1px solid #ccc;
+}
+#project .title {
+  font-size: 4em;
+  text-decoration: underline;
+  text-decoration-color: #f0f;
+}
+#project .list {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 40px;
+}
+#project .card {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  background-color: #000;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+#project .card .projectImg {
+  position: relative;
+  overflow: hidden;
+}
+
+#project .card .projectImg::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000 50%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+#project .card:hover .projectImg::before {
+  bottom: 0;
+}
+#project .card .projectImg img {
+  width: 100%;
+  transition: 0.5s;
+}
+#project .card:hover .projectImg img {
+  filter: blur(5px);
+}
+#project .card .details {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 2;
+}
+#project .card:hover .details {
+  bottom: 0;
+}
+#project .card .details h3 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+#project .card .details .tag {
+  position: relative;
+  margin-top: 5px;
+}
+#project .card .details .tag span {
+  padding: 2px 5px;
+  margin-right: 2px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 4px;
+}
+#project .card .details .tag span.JS {
+  color: #000;
+  background-color: #ff0;
+}
+#project .card .details .tag span.node {
+  color: #669f64;
+  background-color: #fff;
+}
+#project .card .details .info {
+  color: #fff;
+  font-size: 1.2em;
+}
+#project .card .details .info p {
+  margin: 15px 0 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+  #project .list {
+    display: block;
+  }
+  #project .card {
+    margin-top: 30px;
+  }
+  #project .card .projectImg::before {
+    bottom: 0;
+  }
+  #project .card .details {
+    bottom: 0;
+  }
+}
