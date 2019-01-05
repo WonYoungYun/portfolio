@@ -45,7 +45,7 @@ export default class Slider extends Component {
       });
     } else {
       this.setState({
-        number: this.state.number
+        number: 2
       });
     }
   };
@@ -56,7 +56,7 @@ export default class Slider extends Component {
       });
     } else {
       this.setState({
-        number: this.state.number
+        number: 0
       });
     }
   };
