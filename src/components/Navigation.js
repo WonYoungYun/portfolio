@@ -55,6 +55,7 @@ export default class Navigation extends Component {
       });
     }
   };
+
   render() {
     const { navData } = this.state;
 
