@@ -20,7 +20,7 @@ export default class Slider extends Component {
       {
         name: "#contact",
         imgSrc: contactImg,
-        txt: "나와의 연결"
+        txt: "나의 주소록"
       }
     ],
     number: 0

@@ -5,7 +5,6 @@
 }
 #nav > div {
   position: relative;
-  min-width: 600px;
   height: 100%;
 }
 #nav .tab {
@@ -57,22 +56,23 @@
   #nav {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  #nav > div {
-  }
   #nav .tab {
-    display: block;
+    display: inline;
+    z-index: 9999;
   }
   #nav ul {
-    display: none;
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: -100%;
     transition: 0.6s ease;
   }
   #nav ul.show {
-    display: block;
-    padding-top: 70px;
-    transition: 0.6s ease;
+    top: 10%;
   }
   #nav li {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0);
+    z-index: 9998;
   }
   #nav li:hover {
     border: none;
