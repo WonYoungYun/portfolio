@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/movieApp.99bfb99c.png"
   },
   {
-    "revision": "af850ae7e8bb751c38fb",
+    "revision": "bc348aa55e48b1b818a5",
     "url": "/portfolio/static/css/main.0288c73f.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/todoList.ef9331a2.png"
   },
   {
-    "revision": "af850ae7e8bb751c38fb",
-    "url": "/portfolio/static/js/main.af850ae7.chunk.js"
+    "revision": "bc348aa55e48b1b818a5",
+    "url": "/portfolio/static/js/main.bc348aa5.chunk.js"
   },
   {
     "revision": "1a77bd739b1cc98320fae275d4b247e8",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/contact.34077c2a.jpg"
   },
   {
-    "revision": "1a918fb97b096bc02298b2a48ea65f03",
+    "revision": "777fb302c9484ae0f00ad2b3b44644d1",
     "url": "/portfolio/index.html"
   }
 ];
