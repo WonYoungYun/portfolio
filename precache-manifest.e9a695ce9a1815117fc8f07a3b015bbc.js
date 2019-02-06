@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/board.1a77bd73.png"
   },
   {
-    "revision": "33c5156f1f1bfeb663b9",
-    "url": "/portfolio/static/css/main.9a91553f.chunk.css"
+    "revision": "9b28a31d39a6bc754bb5",
+    "url": "/portfolio/static/css/main.a1313320.chunk.css"
   },
   {
-    "revision": "8d9183621398347f15c1",
-    "url": "/portfolio/static/js/1.8d918362.chunk.js"
+    "revision": "10f8ba84b9f7df0326b9",
+    "url": "/portfolio/static/js/1.10f8ba84.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/movieApp.99bfb99c.png"
   },
   {
-    "revision": "33c5156f1f1bfeb663b9",
-    "url": "/portfolio/static/js/main.33c5156f.chunk.js"
+    "revision": "9b28a31d39a6bc754bb5",
+    "url": "/portfolio/static/js/main.9b28a31d.chunk.js"
   },
   {
     "revision": "6aae72d70493fbfab6c27ed2fff8f276",
@@ -38,6 +38,10 @@ self.__precacheManifest = [
   {
     "revision": "1d0c821a0b6f331a9e8e76667003ce99",
     "url": "/portfolio/static/media/phonebook.1d0c821a.png"
+  },
+  {
+    "revision": "8494ead59d110cad0174a0aa74717e9e",
+    "url": "/portfolio/static/media/gamebox.8494ead5.PNG"
   },
   {
     "revision": "ed91b36eebfb1ee9dede02443a212112",
@@ -52,7 +56,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/contact.34077c2a.jpg"
   },
   {
-    "revision": "8fd14149543794116d01d0af9b035a24",
+    "revision": "3b12098fb79c87e6cccafb838d1bdf3c",
     "url": "/portfolio/index.html"
   }
 ];
