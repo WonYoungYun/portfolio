@@ -4,7 +4,9 @@ import rpgImg from "../img/txtRPG.png";
 import todoList from "../img/todoList.png";
 import movieApp from "../img/movieApp.png";
 import board from "../img/board.png";
-
+import reactMovie from "../img/reactMovieApp.PNG";
+import PhoneBook from "../img/phonebook.png";
+import GameBox from "../img/gamebox.PNG";
 export default class Project extends Component {
   state = {
     projectList: [
@@ -37,6 +39,27 @@ export default class Project extends Component {
         imgSrc: board,
         lng: "node",
         info: "NodeJS로 구현한 CRUD기능이 있는 게시판"
+      },
+      {
+        name: "ReactMoiveApp",
+        link: "https://github.com/WonYoungYun/React_movieApp",
+        imgSrc: reactMovie,
+        lng: "react",
+        info: "react와 영화Api를 이용하여 영화의 목록을 보여주는 Movie App"
+      },
+      {
+        name: "PhoneBook",
+        link: "https://github.com/WonYoungYun/React-PhoneBook",
+        imgSrc: PhoneBook,
+        lng: "react",
+        info: "react로 만든 전화번호 등혹, 수정, 삭제가 가능한 전화번호부"
+      },
+      {
+        name: "GameBox",
+        link: "https://github.com/WonYoungYun/gameBox",
+        imgSrc: GameBox,
+        lng: "vue",
+        info: "vue를 이용하여 만든 11가지의 게임이 들어있는 GameBox"
       }
     ]
   };

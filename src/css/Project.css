@@ -9,6 +9,7 @@
 }
 #project .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 60px 40px;
 }
@@ -16,7 +17,7 @@
   position: relative;
   width: 300px;
   height: 450px;
-  margin: 20px 0;
+  margin: 20px 30px;
   background-color: #000;
   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -82,9 +83,17 @@
   color: #000;
   background-color: #ff0;
 }
+#project .card .details .tag span.react {
+  color: #00d8ff;
+  background-color: #fff;
+}
 #project .card .details .tag span.node {
   color: #669f64;
   background-color: #fff;
+}
+#project .card .details .tag span.vue {
+  color: #41b883;
+  background-color: #35495e;
 }
 #project .card .details .info {
   color: #fff;
